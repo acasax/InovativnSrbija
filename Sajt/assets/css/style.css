@@ -502,7 +502,7 @@ h6 {
     height: 80vh;
     overflow: hidden;
     position: relative;
-    background: url("../img/hero-bg.jpg") top center;
+    background: url("../img/slajder2.png") top center;
     background-size: cover;
     position: relative;
     margin-bottom: -90px;
@@ -534,8 +534,7 @@ h6 {
 
 #hero h2 {
     color: #fff;
-    margin-bottom: 30px;
-    font-size: 48px;
+    font-size: 90px;
     font-weight: 700;
 }
 
