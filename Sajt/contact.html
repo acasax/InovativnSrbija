@@ -10,7 +10,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/idea.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -54,7 +54,7 @@
                     <li><a class="nav-link scrollto" href="komunikacionikanali.html">Komunikacioni kanali</a></li>
                     <li><a class="nav-link scrollto" href="okruglistolovi.html">Okrugli stolovi</a></li>
                     <li><a class="nav-link scrollto" href="manifestacije.html">Manifestacije</a></li>
-                    <li><a class="nav-link scrollto" href="clanovimreze.html">Članovi mreže</a></li>
+                    <li><a class="nav-link scrollto" href="prijateljiprojekat.html">Prijatelji projekat</a></li>
                     <li><a class="nav-link scrollto" href="contact.html">Kontakt</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -115,7 +115,7 @@
 
                     <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
 
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <form id="contact" method="post" role="form" enctype="multipart/form-data" class="php-email-form">
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Vaše ime" required>
@@ -128,7 +128,7 @@
                                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Naslov" required>
                             </div>
                             <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Poruka" required></textarea>
+                                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Poruka" required></textarea>
                             </div>
                             <div class="my-3">
                                 <div class="loading">Loading</div>
@@ -170,7 +170,7 @@
                             <li>
                                 <a class="bx bx-chevron-right"></i> <a href="manifestacije.html">Manifestacije</a></li>
                             <li>
-                                <a class="bx bx-chevron-right"></i> <a href="clanovimreze.html">Članovi mreže</a></li>
+                                <a class="bx bx-chevron-right"></i> <a href="clanovimreze.html">Prijatelji projekta</a></li>
                             <li>
                                 <a class="bx bx-chevron-right"></i> <a href="contact.html">Kontakt</a></li>
                             </li>
@@ -226,6 +226,8 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <script src="forms/mail.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
