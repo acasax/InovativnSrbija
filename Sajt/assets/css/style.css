@@ -2498,3 +2498,14 @@ section {
 #footer .credits a {
     color: #aa2b2b;
 }
+
+.footerImg {
+    height: 80px;
+}
+
+
+@media (max-width: 1200px) {
+    .footerImg {
+        height: 50px;
+    }
+}
