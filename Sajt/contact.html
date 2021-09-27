@@ -28,6 +28,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/sweetalert.css" rel="stylesheet">
 
 </head>
 
@@ -115,20 +116,53 @@
 
                     <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
 
-                        <form id="contact" method="post" role="form" enctype="multipart/form-data" class="php-email-form">
+                        <form id="contactForm" method="post" enctype="multipart/form-data" class="php-email-form">
+
+                            <div class="col-md-12 form-group">
+
+                                <label for="name" class="formLabel">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="" onblur="$(this).valid()">
+                                <label for="name" class=""></label>
+
+                            </div>
+
+                            <div class="col-md-12 form-group">
+
+                                <label for="email" class="formLabel">E-mail</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="" onblur="$(this).valid()">
+                                <label for="email" class=""></label>
+
+                            </div>
+
+                            <div class="col-md-12 form-group">
+
+                                <label for="message" class="formLabel">Message</label>
+                                <textarea id="message" rows="5" placeholder="" class="form-control" onblur="$(this).valid()" name="message"></textarea>
+                            </div>
+
+                            <div class="text-center"><button type="submit">Pošalji</button></div>
+
+
+                        </form>
+
+                        <!-- <form id="contactForm" method="post" enctype="multipart/form-data" class="php-email-form">
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Vaše ime" required>
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Vaše ime" onblur="$(this).valid()">
+                                    <label for="name" class=""></label>
                                 </div>
                                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Vaš Email" required>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Vaš Email" onblur="$(this).valid()">
+                                    <label for="email" class=""></label>
                                 </div>
                             </div>
                             <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Naslov" required>
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Naslov" onblur="$(this).valid()">
+                                <label for="subject" class=""></label>
                             </div>
                             <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Poruka" required></textarea>
+                                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Poruka" onblur="$(this).valid()"></textarea>
+                                <label for="message" class=""></label>
                             </div>
                             <div class="my-3">
                                 <div class="loading">Loading</div>
@@ -136,7 +170,7 @@
                                 <div class="sent-message">Vaša poruka je poslata. Hvala Vam!</div>
                             </div>
                             <div class="text-center"><button type="submit">Pošalji</button></div>
-                        </form>
+                        </form>-->
 
                     </div>
 
@@ -225,11 +259,22 @@
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-    <script src="forms/mail.js"></script>
-
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
+
+    <!-- Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns " crossorigin="anonymous "></script>
+    <!-- Custom JS-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js " integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+    <script src="assets/js/sweetalert.js"></script>
+    <script src="assets/js/contact.js"></script>
 </body>
 
 </html>

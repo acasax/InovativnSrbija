@@ -961,7 +961,7 @@ section {
 }
 
 .why-us .play-btn::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 50%;
     top: 50%;
@@ -976,7 +976,7 @@ section {
 }
 
 .why-us .play-btn::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 120px;
     height: 120px;
@@ -1004,7 +1004,7 @@ section {
 }
 
 .why-us .play-btn:hover::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1371,7 +1371,7 @@ section {
 }
 
 .team .member span::after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     width: 50px;
@@ -1929,7 +1929,7 @@ section {
 }
 
 .blog .entry .entry-content blockquote::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -2503,9 +2503,15 @@ section {
     height: 80px;
 }
 
-
 @media (max-width: 1200px) {
     .footerImg {
         height: 50px;
     }
+}
+
+.error {
+    margin-top: 2px;
+    font-size: 17px;
+    color: red;
+    font-weight: 600;
 }
